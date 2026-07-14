@@ -109,7 +109,9 @@ class StudentList{
 		}
 		return studentArray;
 	}
+
 	//------Inner classes--------------------------
+	
 	public Student search(String id){
 		Node temp=first;
 		while(temp!=null){
