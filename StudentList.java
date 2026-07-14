@@ -72,4 +72,56 @@ class StudentList{
 		}
 		System.out.println(isEmpty() ?"empty]":"\b\b]");
 	}
+
+	public int size(){
+		Node temp=first;
+		int count=0;
+		while(temp!=null){
+			count++;
+			temp=temp.next;
+		}
+		return count;
+	}
+	public boolean isEmpty(){
+		return first==null;
+	}
+	public void clear(){
+		first=null;
+	}
+	public int search(Student student){
+		Node temp=first;
+		int index=0;
+		while(temp!=null){
+			if(temp.student.equals(student)){
+				return index;
+			}
+			index++;
+			temp=temp.next;
+		}
+		return -1;
+	}
+	public Student[] toArray(){
+		Student[] studentArray=new Student[size()];
+		Node temp=first;
+		for (int i = 0; i < studentArray.length; i++)	{
+			studentArray[i]=temp.student;
+			temp=temp.next;
+		}
+		return studentArray;
+	}
+	//------Inner classes--------------------------
+	public Student search(String id){
+		Node temp=first;
+		while(temp!=null){
+			if(temp.student.getId().equalsIgnoreCase(id)){
+				return temp.student;
+			}
+		}
+		return null;
+	}
+	class Node{
+		private Student student;
+		private Node next;
+		Node(Student student){this.student=student;}
+	}
 }
