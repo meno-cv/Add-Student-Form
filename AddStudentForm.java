@@ -66,10 +66,19 @@ class AddStudentForm  extends JFrame{
 		labelPanel.add(lblName);
 		labelPanel.add(lblPrfMarks);
 		labelPanel.add(lblDbmsMarks);
-		
+
 		add("West",labelPanel);
 		
 		//-------------------------------------------------------------
 
-
+        txtStudentId=new JTextField(5);
+		txtStudentId.setFont(new Font("",1,20));
+		txtName=new JTextField(10);
+		txtName.setFont(new Font("",1,20));
+		txtPrfMarks=new JTextField(4);
+		txtPrfMarks.setFont(new Font("",1,20));
+		txtDbmsMarks=new JTextField(4);
+		txtDbmsMarks.setFont(new Font("",1,20));
+		
+		JPanel textPanel=new JPanel(new GridLayout(4,1));
 		
