@@ -81,4 +81,24 @@ class AddStudentForm  extends JFrame{
 		txtDbmsMarks.setFont(new Font("",1,20));
 		
 		JPanel textPanel=new JPanel(new GridLayout(4,1));
+
+
+		JPanel idTextPanel=new JPanel(new FlowLayout(FlowLayout.LEFT));
+		idTextPanal.add(txtStudentId);
+		textPanel.add(idTextPanal);
+		
+		JPanel nameTextPanal=new JPanel(new FlowLayout(FlowLayout.LEFT));
+		nameTextPanal.add(txtName);
+		textPanel.add(nameTextPanal);
+		
+		JPanel prfMarksTextPanal=new JPanel(new FlowLayout(FlowLayout.LEFT));
+		prfMarksTextPanal.add(txtPrfMarks);
+		textPanel.add(prfMarksTextPanal);
+		
+		JPanel dbmsMarksTextPanal=new JPanel(new FlowLayout(FlowLayout.LEFT));
+		dbmsMarksTextPanal.add(txtDbmsMarks);
+		textPanel.add(dbmsMarksTextPanal);
+		add("Center",textPanel);
+	}
+}
 		
