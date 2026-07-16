@@ -53,3 +53,22 @@ class SearchStudentForm  extends JFrame{
 		southPanel.add(btSearch);
 		southPanel.add(btCancel);
 		add("South",southPanel);
+
+        //-------------------------------------------------------------
+		
+		JLabel lblStudentId=new JLabel("Student ID");
+		JLabel lblName=new JLabel("Name");
+		JLabel lblPrfMarks=new JLabel("Prf Marks");
+		JLabel lblDbmsMarks=new JLabel("Dbms Marks");
+		lblStudentId.setFont(new Font("",1,20));
+		lblName.setFont(new Font("",1,20));
+		lblPrfMarks.setFont(new Font("",1,20));
+		lblDbmsMarks.setFont(new Font("",1,20));
+		
+		JPanel labelPanel=new JPanel(new GridLayout(4,1));
+		JPanel idTextPanal=new JPanel(new FlowLayout(FlowLayout.LEFT));
+		labelPanel.add(lblStudentId);
+		labelPanel.add(lblName);
+		labelPanel.add(lblPrfMarks);
+		labelPanel.add(lblDbmsMarks);
+		add("West",labelPanel);
