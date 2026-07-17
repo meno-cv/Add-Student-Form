@@ -19,3 +19,14 @@ class MainForm  extends JFrame{
 		titleLabel.setHorizontalAlignment(JLabel.CENTER);
 		add("North",titleLabel);
 		//-------------------------------------------------------------
+        
+			
+		JPanel buttonPanel=new JPanel(new GridLayout(6,1));
+		btAddStudent=new JButton("Add Student Form");
+		btAddStudent.setFont(new Font("",1,20));
+		btAddStudent.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent evt){
+				new AddStudentForm().setVisible(true);
+			}
+		});
+		buttonPanel.add(btAddStudent);
