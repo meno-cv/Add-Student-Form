@@ -43,3 +43,12 @@ class MainForm  extends JFrame{
 				new SearchStudentForm().setVisible(true);
 			}
 		});
+
+		btDeleteStudent=new JButton("Delete Student Form");
+		btDeleteStudent.setFont(new Font("",1,20));
+		buttonPanel.add(btDeleteStudent);
+		btDeleteStudent.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent evt){
+				//
+			}
+		});
