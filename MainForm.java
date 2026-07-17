@@ -49,7 +49,7 @@ class MainForm  extends JFrame{
 		buttonPanel.add(btDeleteStudent);
 		btDeleteStudent.addActionListener(new ActionListener(){
 			public void actionPerformed(ActionEvent evt){
-				//
+				
 			}
 		});
 
