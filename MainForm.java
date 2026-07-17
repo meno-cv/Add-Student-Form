@@ -52,3 +52,13 @@ class MainForm  extends JFrame{
 				//
 			}
 		});
+
+		btExit=new JButton("Exit");
+		btExit.setFont(new Font("",1,20));
+		buttonPanel.add(btExit);
+		add("Center",buttonPanel);
+	}
+	public static void main(String args[]){
+		new MainForm().setVisible(true);	
+	}
+}
