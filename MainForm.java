@@ -30,3 +30,16 @@ class MainForm  extends JFrame{
 			}
 		});
 		buttonPanel.add(btAddStudent);
+
+		btViewStudent=new JButton("View Student Form");
+		btViewStudent.setFont(new Font("",1,20));
+		buttonPanel.add(btViewStudent);
+		
+		btSearchStudent=new JButton("Search Student Form");
+		btSearchStudent.setFont(new Font("",1,20));
+		buttonPanel.add(btSearchStudent);
+		btSearchStudent.addActionListener(new ActionListener(){
+			public void actionPerformed(ActionEvent evt){
+				new SearchStudentForm().setVisible(true);
+			}
+		});
